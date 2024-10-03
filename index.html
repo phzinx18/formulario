@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Formulário</h1>
+    <form action="#" method="post"> <!--escolher ação e o metodo  -->
+
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu Nome">
+        <!-- o "name" tem que ser o mesmo do "for" da "label", pode ser adicionado o placeholder -->
+
+        <!-- divisão entre os campos  -->
+
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha" placeholder="Digite sua Senha">
+
+        <!-- divisão entre os campos  -->
+
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu E-mail">
+
+        <!-- divisão entre os campos  -->
+
+        <label for="idade">Idade:</label>
+        <input type="number" name="idade" id="idade" max="100" min="18" class="small-input"
+            placeholder="Digite sua idade">
+
+        <!-- divisão entre os campos  -->
+
+        <label for="site">Website</label>
+        <input type="url" name="site" id="site" placeholder="https://">
+
+        <!-- divisão entre os campos  -->
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" name="telefone" id="telefone" placeholder="(xx) xxxxx-xxxx">
+
+        <!-- divisão entre os campos  -->
+        <div>
+            <label for="termos"><u>li e aceito os termos de uso</u></label>
+            <input type="checkbox" name="termos" id="termos">
+        </div>
+        <!-- divisão entre os campos  -->
+
+        <label for="genero">Gênero</label>
+
+        <input type="radio" name="genero" id="masculino" class="small-input" value="masculino">
+        <label for="masculino" class="inline-label">Masculino</label> <!--  gênero masculino -->
+
+        <input type="radio" name="genero" id="feminino" class="small-input" value="feminino">
+        <label for="feminino" class="inline-label">Feminino</label> <!--  gênero feminino  -->
+
+        <input type="radio" name="genero" id="outro" class="small-input" value="outro">
+        <label for="outro" class="inline-label">Outro</label>
+
+        <!-- divisão entre os campos  -->
+
+        <label for="data-nascimento">Data de nascimento</label>
+        <input type="date" name="data-nascimento" id="data-nascimento">
+
+        <!-- divisão entre os campos  -->
+
+        <label for="cor-fav">Cor favorita</label>
+        <input type="color" name="cor-fav" id="cor-fav">
+
+        <!-- divisão entre os campos  -->
+
+        <label for="satisfacao">Satisfação(0 a 10)</label>
+        <input type="range" name="satisfacao" id="satisfacao" max="10" min="0">
+
+        <!-- divisão entre os campos  -->
+
+        <label for="comentarios">Comentarios</label>
+        <br>
+        <textarea name="comentarios" id="comentarios" rows="4"
+            placeholder="Deixe um comentario sobre nossos serviços"></textarea>
+
+        <!-- divisão entre os campos  -->
+
+        <label for="pais">País:</label>
+        <select name="pais" id="pais">
+            <option value="brasil">Brasil</option>
+            <option value="franca">França</option>
+            <option value="marrocos">Marrocos</option>
+            <option value="russia">Russia</option>
+            <option value="argentina">Argentina</option>
+        </select>
+
+        <label for="arquivo">Carregar arquivo</label>
+        <input type="file" name="arquivo" id="arquivo">
+
+        <button type="submit">ENVIAR</button>
+        <p>os dados poderão ser alterados depois no seu perfil</p>
+    </form>
+</body>
+
+</html>

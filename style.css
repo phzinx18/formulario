@@ -1,0 +1,82 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 20px;
+    background-color: #629fe0;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: #45b5f1;
+    color: #ffffff;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px;
+    margin-top: 20px;
+    border: #000000;
+}
+button :hover{
+    color: #ff0000;
+}
+.small-input{
+    width: auto;
+    display: inline-block;
+}
+.inline-label{
+    display: inline-block;
+    margin-right: 10px;
+}
+form{
+    background-color: #96b6eaac;
+    padding: 25px;
+    border-radius: 30px;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 0 10px #0077ff;
+}
+label{
+    font-weight: bold;
+    display:flex;
+    margin: 10px 0 5px;
+}
+h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="url"],
+input[type="tel"],
+input[type="date"],
+input[type="color"],
+select,
+textarea{
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    width: calc(100%);
+}
+input[type="range"]{
+    width: 100%;
+    margin-bottom: 10px;
+}
+input[type="chechbox"],
+input[type="radio"]{
+    margin-right: 5px;
+    
+}
+p{
+    margin: 0;
+    text-align: center;
+    font-size: small;
+    font-weight: 100;
+}
+input[type="file"]{
+    margin: 10px;
+}
+div{
+    display: flex;
+}
